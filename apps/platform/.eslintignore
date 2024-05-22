@@ -1,0 +1,9 @@
+.next
+.sst
+next-env.d.ts
+node_modules
+yarn.lock
+package-lock.json
+public
+next.config.js
+sst.config.ts

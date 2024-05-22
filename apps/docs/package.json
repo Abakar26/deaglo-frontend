@@ -1,0 +1,43 @@
+{
+  "name": "docs",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "check-types": "tsc --pretty --noEmit",
+    "check-format": "prettier --check '**/*.{js,jsx,ts,tsx,md,mdx,json,css,scss}'",
+    "format": "prettier --write '**/*.{js,jsx,ts,tsx,md,mdx,json,css,scss}'",
+    "check-lint": "eslint . --ext js,jsx,ts,tsx --max-warnings 0",
+    "lint": "eslint . --ext js,jsx,ts,tsx --fix",
+    "dev": "storybook dev",
+    "build": "storybook build"
+  },
+  "dependencies": {
+    "date-fns": "^3.1.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "styled-components": "^6.1.7",
+    "zustand": "^4.4.7",
+    "ui": "*"
+  },
+  "devDependencies": {
+    "@storybook/addon-a11y": "^7.6.7",
+    "@storybook/addon-essentials": "^7.6.7",
+    "@storybook/addon-interactions": "^7.6.7",
+    "@storybook/addon-links": "^7.6.7",
+    "@storybook/addon-onboarding": "^1.0.10",
+    "@storybook/blocks": "^7.6.7",
+    "@storybook/cli": "^7.6.7",
+    "@storybook/react": "^7.6.7",
+    "@storybook/react-vite": "^7.6.12",
+    "@storybook/testing-library": "^0.2.2",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@typescript-eslint/eslint-plugin": "^6.18.0",
+    "eslint-config-next": "14.0.4",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-storybook": "^0.6.15",
+    "storybook": "^7.6.7",
+    "vite-plugin-svgr": "^4.2.0"
+  }
+}

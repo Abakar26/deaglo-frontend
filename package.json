@@ -1,0 +1,27 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "format": "turbo run format",
+    "check-format": "turbo run check-format",
+    "lint": "turbo run lint",
+    "check-lint": "turbo run check-lint",
+    "check-types": "turbo run check-types",
+    "deploy:platform:dev": "cd apps/platform && sst deploy dev",
+    "deploy:platform:prod": "cd apps/platform && sst deploy prod"
+  },
+  "packageManager": "yarn@1.22.21",
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "eslint": "8.56.0",
+    "prettier": "3.2.5",
+    "turbo": "latest"
+  },
+  "name": "frontend",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}

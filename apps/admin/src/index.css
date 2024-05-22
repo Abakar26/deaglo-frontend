@@ -1,0 +1,54 @@
+/* TODO: replace defaults */
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  color: rgb(var(--background-rgb));
+  background-color: #f3f3f4;
+  font-family: HelveticaBold;
+}
+
+@font-face {
+  font-family: "HelveticaRegular";
+  src:
+    local("HelveticaRegular"),
+    url("/fonts/HelveticaNeue-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "HelveticaLight";
+  src:
+    local("HelveticaLight"),
+    url("/fonts/HelveticaNeue-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "HelveticaMedium";
+  src:
+    local("HelveticaMedium"),
+    url("/fonts/HelveticaNeue-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "HelveticaBold";
+  src:
+    local("HelveticaBold"),
+    url("/fonts/HelveticaNeue-Bold.woff2") format("woff2");
+}
